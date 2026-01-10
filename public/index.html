@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KGL Groceries Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>KGL Groceries LTD</h1>
+    <p>Management System</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="porcurement.html">Procurement</a>
+    <a href="sale.html">Sales</a>
+    <a href="#">Credit Sales</a>
+    <a href="#">Reports</a>
+    <a href="login.html">Logout</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Procurement Form -->
+    <section class="card">
+      <h2>Produce Procurement</h2>
+      <form>
+        <label>Produce Name</label>
+        <input type="text" />
+
+        <label>Produce Type</label>
+        <input type="text" />
+
+        <label>Tonnage</label>
+        <input type="number" />
+
+        <label>Cost</label>
+        <input type="number" />
+
+        <label>Dealer Name</label>
+        <input type="text" />
+
+        <label>Branch</label>
+        <input type="text" />
+
+        <button type="submit">Save Procurement</button>
+      </form>
+    </section>
+
+    <!-- Sales Form -->
+    <section class="card">
+      <h2>Produce Sales</h2>
+      <form>
+        <label>Produce Name</label>
+        <input type="text" />
+
+        <label>Quantity Sold</label>
+        <input type="number" />
+
+        <label>Amount Paid</label>
+        <input type="number" />
+
+        <label>Buyer Name</label>
+        <input type="text" />
+
+        <button type="submit">Record Sale</button>
+      </form>
+    </section>
+
+    <!-- Credit Sales Form -->
+    <section class="card">
+      <h2>Credit Sales</h2>
+      <form>
+        <label>Buyer Name</label>
+        <input type="text" />
+
+        <label>NIN</label>
+        <input type="text" />
+
+        <label>Contact</label>
+        <input type="text" />
+
+        <label>Produce</label>
+        <input type="text" />
+
+        <label>Tonnage</label>
+        <input type="number" />
+
+        <label>Amount Due</label>
+        <input type="number" />
+
+        <label>Due Date</label>
+        <input type="date" />
+
+        <button type="submit">Save Credit Sale</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 KGL Groceries LTD</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Procurement | KGL System</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body onload="checkRole()">
+
+  <!-- Header -->
+  <header>
+    <h1>KGL Groceries LTD</h1>
+    <p>Produce Procurement</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="procurement.html">Procurement</a>
+    <a href="sales.html">Sales</a>
+    <a href="credit-sales.html">Credit Sales</a>
+    <a href="reports.html">Reports</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="card">
+      <h2>Record Produce Procurement</h2>
+
+      <form id="procurementForm" class="form-grid">
+
+        <label>Produce Name</label>
+        <input type="text" required />
+
+        <label>Produce Type</label>
+        <input type="text" required />
+
+        <label>Tonnage</label>
+        <input type="number" min="1" required />
+
+        <label>Cost</label>
+        <input type="number" min="0" required />
+
+        <label>Dealer Name</label>
+        <input type="text" required />
+
+        <label>Branch</label>
+        <input type="text" required />
+
+        <button type="submit">Save Procurement</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 KGL Groceries LTD</p>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

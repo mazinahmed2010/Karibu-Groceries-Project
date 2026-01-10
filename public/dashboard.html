@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | KGL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkRole()">
+
+<header>
+  <h1>KGL Dashboard</h1>
+</header>
+
+<nav>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="porcurement.html" id="procurement">Procurement</a>
+  <a href="sale.html" id="sales">Sales</a>
+  <a href="#" id="reports">Reports</a>
+  <a href="login.html" onclick="logout()">Logout</a>
+</nav>
+
+<main>
+  <h2>Welcome to KGL Management System</h2>
+  <p id="roleText"></p>
+</main>
+
+<script src="auth.js"></script>
+</body>
+</html>

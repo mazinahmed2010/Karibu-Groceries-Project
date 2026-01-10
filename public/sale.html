@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sales | KGL System</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body onload="checkRole()">
+
+  <!-- Header -->
+  <header>
+    <h1>KGL Groceries LTD</h1>
+    <p>Produce Sales</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="procurement.html">Procurement</a>
+    <a href="sales.html">Sales</a>
+    <a href="credit-sales.html">Credit Sales</a>
+    <a href="reports.html">Reports</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="card">
+      <h2>Record Sale</h2>
+
+      <form id="salesForm" class="form-grid">
+
+        <label>Produce Name</label>
+        <input type="text" required />
+
+        <label>Quantity Sold (Tonnage)</label>
+        <input type="number" min="1" required />
+
+        <label>Amount Paid</label>
+        <input type="number" min="0" required />
+
+        <label>Buyer Name</label>
+        <input type="text" required />
+
+        <label>Sales Agent</label>
+        <input type="text" required />
+
+        <label>Sale Date</label>
+        <input type="date" required />
+
+        <button type="submit">Record Sale</button>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 KGL Groceries LTD</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/auth.js"></script>
+</body>
+</html>
